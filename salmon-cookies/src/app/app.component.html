@@ -1,34 +1,20 @@
-
-
 <h1> Salmon Cookies Sales Data</h1>
-
-<app-hero-form></app-hero-form>
-
-<br/>
-<br/>
-
-<table>
-  <tr>
-    <th *ngFor = "let column of headers">
-      {{column}}
-
-    </th>
+<table class = 'table table-striped'>
+  <tr *ngFor =let f of data>
+    <td>{{f.Locations}}</td>
+    <td>{{f.6am}}</td>
+    <td>{{f.7am}}</td>
+    <td>{{f.8am}}</td>
+    <td>{{f.9am}}</td>
+    <td>{{f.10am}}</td>
+    <td>{{f.11am}}</td>
+    <td>{{f.12am}}</td>
+    <td>{{f.1pm}}</td>
+    <td>{{f.2pm}}</td>
+    <td>{{f.3pm}}</td>
+    <td>{{f.4pm}}</td>
+    <td>{{f.5pm}}</td>
+    <td>{{f.6pm}}</td>
+    <td>{{f.LocationTotals}}</td>
   </tr>
-
-  <tr *ngFor = "let row of rows">
-    <td *ngFor = "let column of headers">
-      {{row[column]}}
-    </td>
-  </tr>
-
-  <!-- <tr>
-    Form Row
-    make this happen via form
-  </tr> -->
-
-
-  <!-- <tr>
-    Totals Row
-    totals need to be here
-  </tr> -->
 </table>
